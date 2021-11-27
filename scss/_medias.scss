@@ -62,13 +62,15 @@
         }
     }
     header{
-        .navbar{
+        .navbar{     
             .container-fluid{
                 .collapse{
                     .navbar-nav{
                         .nav-item{
-                            .navbar-nav{
-                                display: none;
+                            &:hover{
+                                .navbar-nav{
+                                    display: none;
+                                }
                             }
                         }
                     }
@@ -140,13 +142,15 @@
         }
     }
     header{
-        .navbar{
+        .navbar{     
             .container-fluid{
                 .collapse{
                     .navbar-nav{
                         .nav-item{
-                            .navbar-nav{
-                                display: none;
+                            &:hover{
+                                .navbar-nav{
+                                    display: block;
+                                }
                             }
                         }
                     }
@@ -155,7 +159,7 @@
         }
     }
 }
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1200px){
     body{
         background-image: url(../img/logo/LOGO-DROID-SA_001_PNG.png);
     }
