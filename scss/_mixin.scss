@@ -1,0 +1,12 @@
+@mixin espaciado ($margin, $padding){
+    margin: $margin;
+    padding: $padding;
+}
+@mixin flex ($direction, $justify){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: center;
+    align-content: center;
+}

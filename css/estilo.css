@@ -1,0 +1,476 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  background-color: black;
+  width: 100vw; }
+
+header .navbar {
+  border-bottom: 0.5px solid white;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+  header .navbar .container-fluid .navbar-brand {
+    padding-left: 1rem;
+    transition: all 1s; }
+    header .navbar .container-fluid .navbar-brand:hover {
+      transform: scale(1.2, 1.2); }
+    header .navbar .container-fluid .navbar-brand img {
+      height: 7vh; }
+  header .navbar .container-fluid .collapse .navbar-nav {
+    padding-right: 5rem; }
+    header .navbar .container-fluid .collapse .navbar-nav .nav-item {
+      position: relative;
+      transition: 1s; }
+      header .navbar .container-fluid .collapse .navbar-nav .nav-item .navbar-nav {
+        border: 0.5px solid white;
+        border-radius: 2%;
+        position: absolute;
+        right: 1rem;
+        display: none;
+        width: 20rem;
+        padding: 1rem; }
+        header .navbar .container-fluid .collapse .navbar-nav .nav-item .navbar-nav a {
+          color: #cf06cf; }
+        header .navbar .container-fluid .collapse .navbar-nav .nav-item .navbar-nav .nav-item form {
+          margin: 1rem; }
+      header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover {
+        transform: scale(1.1, 1.1); }
+        header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover .navbar-nav {
+          display: none; }
+          header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover .navbar-nav:hover {
+            transform: none; }
+          header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover .navbar-nav .nav-item:hover {
+            transform: none; }
+
+main {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto 1fr;
+  grid-template-areas: "newRelease" "nextEvent" "latestReleases" "artistRoster"; }
+  main .newRelease {
+    grid-area: newRelease;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0.5rem;
+    margin-bottom: 2rem; }
+    main .newRelease h1 {
+      margin: 0rem 0.5rem;
+      padding: 0.5rem; }
+    main .newRelease img {
+      border: 0.5px solid white;
+      margin: 0rem 1rem 1rem 1rem;
+      width: 85vw; }
+  main .latestReleases {
+    grid-area: latestReleases;
+    margin: 0.5rem; }
+    main .latestReleases h2 {
+      text-align: center;
+      margin: 0.5rem;
+      padding: 0.5rem; }
+    main .latestReleases .container-fluid {
+      margin: 0%;
+      padding: 0%; }
+      main .latestReleases .container-fluid .row {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-wrap: nowrap; }
+        main .latestReleases .container-fluid .row div {
+          margin: 0.5rem;
+          padding: 0%;
+          width: 15rem;
+          transition: all 1s; }
+          main .latestReleases .container-fluid .row div:hover {
+            transform: scale(1.1, 1.1); }
+          main .latestReleases .container-fluid .row div a {
+            margin: 0%;
+            padding: 0%;
+            color: white;
+            text-decoration: none;
+            font-size: small;
+            border: 0.5px solid white;
+            display: inline-block; }
+            main .latestReleases .container-fluid .row div a:hover {
+              text-decoration: underline;
+              color: #cf06cf; }
+            main .latestReleases .container-fluid .row div a figure {
+              margin: 0%; }
+              main .latestReleases .container-fluid .row div a figure img {
+                width: 15rem; }
+            main .latestReleases .container-fluid .row div a figcaption {
+              padding: 0.5rem;
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: center; }
+  main .artistRoster {
+    grid-area: artistRoster;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+    main .artistRoster h2 {
+      text-align: center;
+      margin: 0.5rem;
+      padding: 0.5rem; }
+    main .artistRoster .carousel {
+      border: 3px solid white;
+      border-radius: 1%;
+      margin: 0.5rem;
+      width: 21rem; }
+  main .nextEvent {
+    border-radius: 1%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    grid-area: nextEvent;
+    margin: 0.5rem;
+    padding: 1rem; }
+    main .nextEvent h2 {
+      text-align: center;
+      margin: 0rem 0.5rem;
+      padding: 0rem 0.5rem; }
+    main .nextEvent div {
+      margin: 0.5rem; }
+      main .nextEvent div a {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        text-decoration: none;
+        color: white;
+        display: inline-block; }
+        main .nextEvent div a:hover {
+          font-weight: bolder;
+          color: #cf06cf;
+          text-decoration: underline; }
+        main .nextEvent div a figure img {
+          width: 19.5rem; }
+        main .nextEvent div a figcaption h3 {
+          border-bottom: 1px white solid; }
+        main .nextEvent div a figcaption span {
+          margin: 0.5rem 0rem;
+          display: block;
+          font-size: small; }
+        main .nextEvent div a figcaption p {
+          font-size: small;
+          margin: 0%; }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center; }
+  footer p {
+    margin: 0.5rem; }
+  footer section {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+    footer section div {
+      transition: all 1s; }
+      footer section div:hover {
+        transform: scale(1.1, 1.1); }
+      footer section div a {
+        transition: all 1s;
+        color: white;
+        text-decoration: none; }
+        footer section div a:hover {
+          color: #cf06cf;
+          text-decoration: underline; }
+    footer section div ul {
+      margin: 0%;
+      padding: 0%;
+      list-style-type: none; }
+      footer section div ul li {
+        margin: 0.5rem;
+        display: inline-block; }
+        footer section div ul li a {
+          color: white; }
+          footer section div ul li a:hover {
+            color: #cf06cf; }
+
+.logIn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+  .logIn h1 {
+    margin: 2rem 0.5rem; }
+  .logIn form {
+    height: 50vh;
+    margin: 3rem 1rem 5rem 1rem;
+    padding: 2rem;
+    border: 0.5px solid white; }
+    .logIn form a {
+      color: #cf06cf; }
+
+.signUp {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+  .signUp h1 {
+    margin: 2rem 0.5rem; }
+  .signUp form {
+    margin: 1rem;
+    padding: 2rem 1rem;
+    border: 0.5px solid white; }
+    .signUp form div a {
+      color: #cf06cf; }
+
+.shop {
+  width: 100vw; }
+  .shop section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+    .shop section h1 {
+      text-align: center;
+      margin: 0.5rem;
+      padding: 0.5rem;
+      margin-top: 2rem; }
+    .shop section .merch {
+      width: 100vw;
+      padding: 0%;
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center; }
+      .shop section .merch li {
+        transition: all 1s;
+        margin: 4rem;
+        border: 0.5px solid white; }
+        .shop section .merch li:hover {
+          transform: scale(1.1, 1.1); }
+        .shop section .merch li figure {
+          margin: 0%; }
+          .shop section .merch li figure img {
+            width: 15rem; }
+        .shop section .merch li figcaption {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          align-content: center; }
+          .shop section .merch li figcaption p {
+            margin: 0.5rem; }
+          .shop section .merch li figcaption select {
+            margin: 0.5rem; }
+          .shop section .merch li figcaption button {
+            margin: 1rem; }
+            .shop section .merch li figcaption button p {
+              display: inline-block; }
+
+.gallery {
+  margin: 0.5rem;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+  .gallery h1 {
+    text-align: center;
+    margin: 0.5rem;
+    padding: 0.5rem; }
+
+.slideLeft-0 {
+  animation-name: slideLeft;
+  animation-duration: 200ms;
+  animation-delay: 0;
+  animation-timing-function: ease-in-out;
+  visibility: hidden;
+  animation-fill-mode: forwards; }
+
+.slideLeft-200ms {
+  animation-name: slideLeft;
+  animation-duration: 200ms;
+  animation-delay: 200ms;
+  animation-timing-function: ease-in-out;
+  visibility: hidden;
+  animation-fill-mode: forwards; }
+
+.slideLeft-400ms {
+  animation-name: slideLeft;
+  animation-duration: 200ms;
+  animation-delay: 400ms;
+  animation-timing-function: ease-in-out;
+  visibility: hidden;
+  animation-fill-mode: forwards; }
+
+.slideLeft-600ms {
+  animation-name: slideLeft;
+  animation-duration: 200ms;
+  animation-delay: 600ms;
+  animation-timing-function: ease-in-out;
+  visibility: hidden;
+  animation-fill-mode: forwards; }
+
+.slideLeft-800ms {
+  animation-name: slideLeft;
+  animation-duration: 200ms;
+  animation-delay: 800ms;
+  animation-timing-function: ease-in-out;
+  visibility: hidden;
+  animation-fill-mode: forwards; }
+
+.slideLeft-1000ms {
+  animation-name: slideLeft;
+  animation-duration: 200ms;
+  animation-delay: 1000ms;
+  animation-timing-function: ease-in-out;
+  visibility: hidden;
+  animation-fill-mode: forwards; }
+
+.slideLeft-1200ms {
+  animation-name: slideLeft;
+  animation-duration: 200ms;
+  animation-delay: 1200ms;
+  animation-timing-function: ease-in-out;
+  visibility: hidden;
+  animation-fill-mode: forwards; }
+
+.slideLeft-1400ms {
+  animation-name: slideLeft;
+  animation-duration: 200ms;
+  animation-delay: 1400ms;
+  animation-timing-function: ease-in-out;
+  visibility: hidden;
+  animation-fill-mode: forwards; }
+
+div[class*="slideLeft"] {
+  padding: 0.3rem; }
+  div[class*="slideLeft"]:hover img {
+    filter: brightness(150%); }
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0; }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+    visibility: visible; } }
+
+@media only screen and (min-width: 768px) {
+  main {
+    margin-top: 8rem; }
+    main .newRelease {
+      margin-bottom: 3rem; }
+    main .latestReleases h2 {
+      margin: 1rem 0.5rem; }
+    main .latestReleases .container-fluid .row {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
+    main .artistRoster .carousel {
+      width: 75vw; }
+    main .nextEvent {
+      margin: 3rem; }
+      main .nextEvent h2 {
+        margin: 1rem 0.5rem; }
+      main .nextEvent div {
+        margin: 0.5rem; }
+        main .nextEvent div a figure img {
+          width: 35rem; }
+  .gallery {
+    margin-top: 8rem; }
+    .gallery h1 {
+      margin-bottom: 1rem; }
+  .logIn {
+    height: 79vh; }
+    .logIn form {
+      height: 50vh; }
+      .logIn form div {
+        margin: 2rem 0rem; }
+  .signUp form {
+    margin-bottom: 2rem; }
+    .signUp form div {
+      margin: 0.5rem 0rem; }
+  header .navbar .container-fluid .collapse .navbar-nav .nav-item .navbar-nav {
+    display: none; } }
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background-image: url(../img/logo/LOGO-DROID-SA_001_PNGPrueba.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat; }
+    body main {
+      margin-top: 4rem;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto 1fr 1fr;
+      grid-template-areas: "newRelease nextEvent" "latestReleases latestReleases" "artistRoster artistRoster"; }
+      body main .newRelease {
+        margin-top: 3rem; }
+        body main .newRelease h2 {
+          margin: 3rem 0.5rem 0rem 0.5rem; }
+        body main .newRelease img {
+          width: 50vw; }
+      body main .artistRoster .carousel {
+        width: 35rem; }
+      body main .nextEvent {
+        margin: 2rem;
+        padding: 1rem; }
+        body main .nextEvent div a figure img {
+          width: 25rem; }
+    body footer p {
+      margin: 2rem; }
+    body footer section {
+      margin: 2rem; }
+  .logIn {
+    height: 110vh; }
+    .logIn h1 {
+      margin: 1rem 0.5rem; }
+    .logIn form {
+      height: 80vh;
+      margin: 1rem;
+      padding: 2rem 4rem;
+      margin: 1rem; }
+  header .navbar .container-fluid .collapse .navbar-nav .nav-item .navbar-nav {
+    display: none; } }
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background-image: url(../img/logo/LOGO-DROID-SA_001_PNG.png); } }

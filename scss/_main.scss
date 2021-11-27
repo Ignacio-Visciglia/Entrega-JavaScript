@@ -1,0 +1,139 @@
+main{  
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto 1fr;
+    grid-template-areas:
+        "newRelease"
+        "nextEvent"
+        "latestReleases"
+        "artistRoster";
+    .newRelease{
+        grid-area: newRelease;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        margin:0.5rem;
+        margin-bottom: 2rem;
+        h1{
+            @include espaciado(0rem 0.5rem,0.5rem);
+        }
+        img{
+            border: 0.5px solid $color-bor;
+            margin: 0rem 1rem 1rem 1rem;
+            width: 85vw;
+        }
+    }
+    .latestReleases{
+        grid-area: latestReleases;
+        margin: 0.5rem;
+        h2{
+            text-align: center;
+            @include espaciado(0.5rem,0.5rem);
+        }
+        .container-fluid{
+            @include espaciado(0%,0%);
+            .row{
+                @include espaciado(0%,0%);
+                @include flex(column,space-between);
+                flex-wrap: nowrap;
+                div{
+                    margin: 0.5rem;
+                    padding: 0%;
+                    width: 15rem;
+                    transition: all 1s;
+                    &:hover{
+                        transform: scale(1.1,1.1);
+                    }
+                    a{
+                        @include espaciado(0%,0%);
+                        color: $color-bor;
+                        text-decoration: none;
+                        font-size: small;
+                        border: 0.5px solid $color-bor;
+                        display: inline-block;
+                        &:hover{
+                            text-decoration: underline;
+                            color: $links;
+                        }
+                        figure{
+                            margin: 0%;
+                            img{
+                                width: 15rem;
+                            }
+                        }
+                        figcaption{
+                            padding: 0.5rem;
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .artistRoster{
+        grid-area: artistRoster;
+        margin: 0.5rem;
+        @include flex(column,center);
+        h2{
+            text-align: center;
+            @include espaciado(0.5rem,0.5rem);
+        }
+        .carousel{
+            border: 3px solid $color-bor;
+            border-radius: 1%;
+            margin: 0.5rem;
+            width: 21rem;
+        }
+    }
+    .nextEvent{
+        border-radius: 1%;
+        @include flex(column,center);
+        grid-area: nextEvent;
+        @include espaciado(0.5rem,1rem);
+        h2{
+            text-align: center;
+            @include espaciado(0rem 0.5rem,0rem 0.5rem);
+        }
+        div{
+            margin: 0.5rem;
+            a{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-content: center;
+                text-decoration: none;
+                color: $color-bor;
+                display: inline-block;
+                &:hover{
+                    font-weight: bolder;
+                    color: $links;
+                    text-decoration: underline;
+                }
+                figure{
+                    img{
+                        width: 19.5rem;
+                    }
+                }
+                figcaption{
+                    h3{
+                       border-bottom: 1px $color-bor solid;
+                    }
+                    span{
+                        margin: 0.5rem 0rem;
+                        display: block;
+                        font-size: small;
+                    }
+                    p{
+                        font-size: small;
+                        margin: 0%;
+                    }
+                }
+            }
+        }
+    }
+}

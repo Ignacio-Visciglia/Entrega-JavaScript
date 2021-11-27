@@ -1,0 +1,15 @@
+.signUp{
+    @include flex(column,center);
+    h1{
+        margin: 2rem 0.5rem;
+    }
+    form{
+        @include espaciado(1rem,2rem 1rem);
+        border: 0.5px solid $color-bor;
+        div{
+            a{
+                color: $links;
+            }
+        }
+    }
+}

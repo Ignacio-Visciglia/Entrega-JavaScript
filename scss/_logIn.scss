@@ -1,0 +1,15 @@
+.logIn{
+    @include flex(column,center);
+    h1{
+        margin: 2rem 0.5rem;
+    }
+    form{
+        height: 50vh;
+        @include espaciado(3rem 1rem 5rem 1rem,2rem);
+        border: 0.5px solid $color-bor;
+        a{
+            color: $links;
+        }
+        
+    }
+}
