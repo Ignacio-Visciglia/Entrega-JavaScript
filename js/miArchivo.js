@@ -1,17 +1,50 @@
 /*
- * @challenge: INCORPORAR OBJETOS
+ * @challenge: INCORPORAR ARRAYS
  * 
- * @version: v1.1.0
+ * @version: v1.2.0
  * @author: Juan Ignacio Visciglia
- * @fecha: 04/12/2021
+ * @fecha: 06/12/2021
  *
  * History:
- *  - v1.1.0 – Primera entrega
+ *  - v1.2.0 – Primera entrega
  */
+
+//Declaracion clase Release
+class Release{
+    constructor(name, year){
+        this.name = name; 
+        this.year = year;
+    }
+}
+
+//Creacion de objetos para el Array
+let release1 = new Release("ADE & FRIENDS 2021 compilation", 2021);
+let release2 = new Release("D9 x D9SA ESSENTIALS 2021", 2021);
+let release3 = new Release("D9SA012 - Nemesis", 2021);
+let release4 = new Release("D9SA011 - Perséfone", 2021);
+let release5 = new Release("D9SA008 - Zeus", 2021);
+let release6 = new Release("D9SA007 - Eros", 2021);
+let release7 = new Release("D9SA005 - Afrodita", 2020);
+let release8 = new Release("D9SA005 - Artemisa", 2020);
+
+//Creacion del Array de Releases
+let releasesArray = [release1, release2, release3, release4, release5, release6, release7, release8];
+
+console.log(releasesArray);
+
+//Uso de metodos
+console.log(releasesArray.length);
+
+let spliceArray = releasesArray.splice(2, 3);
+console.log(spliceArray);
+
+console.log(releasesArray);
+let sliceArray = releasesArray.slice(2,4);
+console.log(sliceArray);
 
 //Clase Usuario
 
-class User{
+/* class User{
     constructor(username, password, email, nationality, sex){
         this.username = username;
         this.password = password;
@@ -35,7 +68,7 @@ class User{
 const user1 = new User(`Juan`, `contrasenia`, `juanignacio@mail.com`, `Argentino`, `Masculino`);
 console.log(user1);
 user1.changeEmail();
-console.log(user1.email);
+console.log(user1.email); */
 
 
 //Calculo pagos en cuotas sobre un monto determinado
