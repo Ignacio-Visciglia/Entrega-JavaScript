@@ -1,12 +1,12 @@
 /*
- * @challenge: INCORPORAR ARRAYS
+ * @challenge: PRIMERA ENTREGA DEL PROYECTO FINAL
  * 
- * @version: v1.2.0
+ * @version: v1.0.0
  * @author: Juan Ignacio Visciglia
- * @fecha: 06/12/2021
+ * @fecha: 09/12/2021
  *
  * History:
- *  - v1.2.0 – Primera entrega
+ *  - v1.0.0 – Primera entrega
  */
 
 
