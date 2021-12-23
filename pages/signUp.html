@@ -89,23 +89,23 @@
     </header>
     <main class="signUp">
         <h1 class="animate__animated animate__jello">Sign up to Droid9 South America</h1>
-        <form class="bg-dark">
+        <form id="formSignUp" class="bg-dark">
             <div class="mb-3">
                 <label for="formGroupExampleInput" class="form-label">Username</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username">
+                <input type="text" class="form-control" id="userName" placeholder="Username">
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <input type="password" class="form-control" id="password" placeholder="Password">
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+                <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp" placeholder="Email address">
                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
                 <label for="inputState" class="form-label">Nationality</label>
-                <select class="form-select" aria-label="Default select example">
+                <select id="nationality" class="form-select" aria-label="Default select example">
                     <option selected>Nationality</option>
                     <option value="1">Argentinian</option>
                     <option value="2">Brazilian</option>
@@ -145,6 +145,9 @@
                 Already have an account? <a href="logIn.html">Log in</a>
             </div>
           </form>
+          <div id="result">
+
+          </div>
     </main>
     <footer class="bg-dark">
         <p>© Droid9 South America</p>
@@ -183,6 +186,8 @@
             </div>
         </section>  
     </footer>
+    <!-- Script JS Propio -->
+    <script src="../js/miArchivo.js"></script>
     <!-- Script Animate -->
     <script src="../js/wow.min.js"></script>
               <script>

@@ -11,19 +11,19 @@
 
 
 //Declaracion de arreglo de productos
-let products = [];
+/* let products = []; */
 
 //Clase Producto
-class Product{
+/* class Product{
     constructor(id, name, price){
         this.id = id;
         this.name = name;
         this.price = price;
     }
-}
+} */
 
 //Clase Usuario
-/* class User{
+class User{
     constructor(username, password, email, nationality, sex){
         this.username = username;
         this.password = password;
@@ -75,8 +75,21 @@ class Product{
             alert(`Vuelva a intentar`);
         }
     }
-} */
+}
 
+let formSignUp = document.getElementById(`formSignUp`);
+let result = document.getElementById("result");
+formSignUp.addEventListener(`submit`, validateForm);
+
+function validateForm(e){
+    e.preventDefault();
+    localStorage.setItem(`userName`, document.getElementById(`userName`).value);
+    localStorage.setItem(`password`, document.getElementById(`password`).value);
+    localStorage.setItem(`emailAddress`, document.getElementById(`emailAddress`).value);
+    localStorage.setItem(`nationality`, document.getElementById(`nationality`).value);
+    localStorage.setItem(`sex`, document.getElementsByClassName(`form-check-input`).value);
+    result.textContent = `Gracias por registrarse en Droid9 South America`
+}
 
 /* let user = ""; */
 //Funcion que solicita datos para creacion de objeto user
@@ -99,7 +112,7 @@ user = user.changePassword(); */
 
 
 //Pusheo objetos al Array products
-products.push(new Product(1, "Stainless Tumbler", 1200));
+/* products.push(new Product(1, "Stainless Tumbler", 1200));
 products.push(new Product(2, "Cloth Face Mask", 500));
 products.push(new Product(3, "Women's Boyfriend Tee", 1500));
 products.push(new Product(4, "Kids Premium Tee", 1500));
@@ -116,21 +129,21 @@ products.push(new Product(14, "Premium Tank Top", 900));
 products.push(new Product(15, "Classic Tee", 1500));
 products.push(new Product(16, "Kids Classic Pullover Hoodie", 3500));
 products.push(new Product(17, "Classic Pullover Hoodie", 3500));
-products.push(new Product(18, "Women's Premium Hoodie", 3500));
+products.push(new Product(18, "Women's Premium Hoodie", 3500)); */
 
-let getProductsList = document.getElementById("todosLosProductos");
+/* let getProductsList = document.getElementById("todosLosProductos");
 
-for (const producto of products) {
+for (const product of products) {
     let contenedor = document.createElement("div");
     contenedor.className = "producto"
-    contenedor.innerHTML = `<h3> ID: ${producto.id}</h3>
-                            <p>  Producto: ${producto.name}</p>
-                            <b> $ ${producto.price}</b>`;
+    contenedor.innerHTML = `<h3> ID: ${product.id}</h3>
+                            <p>  Producto: ${product.name}</p>
+                            <b> $ ${product.price}</b>`;
     getProductsList.appendChild(contenedor);
     }
 
 let listaProductos = document.getElementsByClassName("producto");
-listaProductos[1].parentNode.removeChild(listaProductos[1]);
+listaProductos[1].parentNode.removeChild(listaProductos[1]); */
 
 //Funcion de ordenamiento
 /* products.sort((a,b) => {
