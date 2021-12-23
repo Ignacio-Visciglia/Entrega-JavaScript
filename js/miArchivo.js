@@ -1,9 +1,9 @@
 /*
- * @challenge: INTERACTUAR CON HTML
+ * @challenge: INCORPORAR EVENTOS
  * 
  * @version: v1.0.0
  * @author: Juan Ignacio Visciglia
- * @fecha: 21/12/2021
+ * @fecha: 23/12/2021
  *
  * History:
  *  - v1.0.0 – Primera entrega
