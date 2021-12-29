@@ -16,12 +16,12 @@ const addNewCarritoList = () =>{
         tr.setAttribute("id", i);
 
         tr.innerHTML = `<td>
-                            
+                            Hola
                         </td>
                         <td>${element.description}</td>
                         <td>${element.price}</td>
                         <td>
-                            <img class="pointer" src="../images/delete.png" onClick="deleteClick(${i})">
+                            <img class="pointer" src="../images/delete.png" onclick="deleteClick(${i})">
                         </td>`;
 
         tableCarrito.appendChild(tr);

@@ -383,6 +383,9 @@ div[class*="slideLeft"] {
   div[class*="slideLeft"]:hover img {
     filter: brightness(150%); }
 
+.carro .pointer {
+  cursor: pointer; }
+
 @keyframes slideLeft {
   from {
     transform: translateX(100%);

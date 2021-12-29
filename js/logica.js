@@ -1,25 +1,16 @@
-
-
-const resetInputs = ()=>{
-    descripcion.value = "";
-    precio.value ="";
-}
-
 const addItem = () =>{
 
-    let description = descripcion.value;
-    let price = precio.value;
+    let description = descripcion.innerHTML;
+    let price = precio.innerHTML;
     let newProduct = new Product(description, price);
     carrito.push(newProduct);
-    localStorage.setItem("carrito",JSON.stringify(carrito));
+    localStorage.setItem("carrito", JSON.stringify(carrito));
 
     addNewCarritoList();
-    resetInputs();
 }
 
 // Eventos
-
-btnAddItem.onclick = (e) =>{
+btn.onclick= (e) =>{
     e.preventDefault();
     addItem();
 }
