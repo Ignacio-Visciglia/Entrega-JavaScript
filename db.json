@@ -1,0 +1,115 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "img": "../img/merch/1D9SA-ACCESORIES-StainlessTumbler.jpeg",
+      "name": "Stainless Tumbler",
+      "price": 1200
+    },
+    {
+      "id": 2,
+      "img": "../img/merch/2D9SA-ACCESORIES-ClothFaceMask.jpeg",
+      "name": "Cloth Face Mask",
+      "price": 500
+    },
+    {
+      "id": 3,
+      "img": "../img/merch/4D9SA-CLOTHES-KidsPremiumTee.jpeg",
+      "name": "Women's Boyfriend Tee",
+      "price": 1500
+    },
+    {
+      "id": 4,
+      "img": "../img/merch/3D9SA-CLOTHES-Women'sBoyfriendTee.jpeg",
+      "name": "Kids Premium Tee",
+      "price": 1500
+    },
+    {
+      "id": 5,
+      "img": "../img/merch/5D9SA-CLOTHES-Women'sComfortTee.jpeg",
+      "name": "Women's Comfort Tee",
+      "price": 1500
+    },
+    {
+      "id": 6,
+      "img": "../img/merch/6D9SA-CLOTHES-Leggings.jpeg",
+      "name": "Leggings",
+      "price": 2500
+    },
+    {
+      "id": 7,
+      "img": "../img/merch/7D9SA-CLOTHES-PremiumPulloverHoodie.jpeg",
+      "name": "Premium Pullover Hoodie",
+      "price": 3500
+    },
+    {
+      "id": 8,
+      "img": "../img/merch/8D9SA-CLOTHES-ClassicTankTop.jpeg",
+      "name": "Classic Tank Top",
+      "price": 1000
+    },
+    {
+      "id": 9,
+      "img": "../img/merch/9D9-SOUTH-AMERICA-ACCESORIES-StainlessWaterBottle.jpeg",
+      "name": "Stainless Water Bottle",
+      "price": 1900
+    },
+    {
+      "id": 10,
+      "img": "../img/merch/10D9-SOUTH-AMERICA-ACCESORIES-Mug.jpeg",
+      "name": "Mug",
+      "price": 450
+    },
+    {
+      "id": 11,
+      "img": "../img/merch/11D9-SOUTH-AMERICA-ACCESORIES-StainlessTumbler-20oz.jpeg",
+      "name": "Mug",
+      "price": 1100
+    },
+    {
+      "id": 12,
+      "img": "../img/merch/12D9-SOUTH-AMERICA-ACCESORIES-NeckGaiter.jpeg",
+      "name": "Neck Gaiter",
+      "price": 750
+    },
+    {
+      "id": 13,
+      "img": "../img/merch/13D9SA-LADIES&BABIES-Women'sComfortTee.jpeg",
+      "name": "Women's Comfort Tee",
+      "price": 1500
+    },
+    {
+      "id": 14,
+      "img": "../img/merch/14D9SA-CLOTHES-GUYS&GIRLS-PremiumTankTop.jpeg",
+      "name": "Premium Tank Top",
+      "price": 900
+    },
+    {
+      "id": 15,
+      "img": "../img/merch/15D9SA-CLOTHES-GUYS&GIRLS-ClassicTee.jpeg",
+      "name": "Classic Tee",
+      "price": 1500
+    },
+    {
+      "id": 16,
+      "img": "../img/merch/16D9SA-CLOTHES-GUYS&GIRLS-KidsClassicPulloverHoodie.jpeg",
+      "name": "Kids Classic Pullover Hoodie",
+      "price": 3500
+    },
+    {
+      "id": 17,
+      "img": "../img/merch/17DROID9-MEN'S&WOMAN'S-ClassicPulloverHoodie.jpeg",
+      "name": "Classic Pullover Hoodie",
+      "price": 3500
+    },
+    {
+      "id": 18,
+      "img": "../img/merch/18DROID9-WHITE-LOGO-Women'sPremiumHoodie.jpeg",
+      "name": "Women's Premium Hoodie",
+      "price": 3500
+    }
+  ],
+  "users": [
+    
+  ]
+}

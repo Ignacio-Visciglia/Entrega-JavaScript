@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server --watch db.json",
     "build-css": "node-sass --include-path scss scss/estilo.scss css/estilo.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
@@ -15,6 +15,7 @@
     "nodemon": "^2.0.13"
   },
   "dependencies": {
+    "json-server": "^0.17.0",
     "lightbox2": "^2.11.3"
   }
 }
