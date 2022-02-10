@@ -1,7 +1,6 @@
 {
   "name": "droid9southamerica",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "server": "json-server --watch db.json",
@@ -17,5 +16,14 @@
   "dependencies": {
     "json-server": "^0.17.0",
     "lightbox2": "^2.11.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ignacio-Visciglia/3erEntregaProyectoFinal-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ignacio-Visciglia/3erEntregaProyectoFinal-/issues"
+  },
+  "homepage": "https://github.com/Ignacio-Visciglia/3erEntregaProyectoFinal-#readme",
+  "description": ""
 }

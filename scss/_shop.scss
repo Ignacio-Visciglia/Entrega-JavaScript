@@ -8,6 +8,23 @@
             margin-top: 2rem;
             
         }
+        table{
+            
+            thead{
+                color: $color-bor;
+            }
+            tbody{
+                tr{
+                    td{
+                        background-color: white;
+                        img{
+                            width: 4rem;
+                        }
+                    }
+                }
+                
+            }
+        }
         .merch{
             width: $full;
             padding: 0%;

@@ -264,6 +264,12 @@ footer {
       margin: 0.5rem;
       padding: 0.5rem;
       margin-top: 2rem; }
+    .shop section table thead {
+      color: white; }
+    .shop section table tbody tr td {
+      background-color: white; }
+      .shop section table tbody tr td img {
+        width: 4rem; }
     .shop section .merch {
       width: 100vw;
       padding: 0%;
@@ -299,6 +305,12 @@ footer {
             margin: 1rem; }
             .shop section .merch li figcaption button p {
               display: inline-block; }
+
+.modal {
+  color: black; }
+
+.imgModal {
+  width: 4rem; }
 
 .gallery {
   margin: 0.5rem;
@@ -382,9 +394,6 @@ div[class*="slideLeft"] {
   padding: 0.3rem; }
   div[class*="slideLeft"]:hover img {
     filter: brightness(150%); }
-
-.carro .pointer {
-  cursor: pointer; }
 
 @keyframes slideLeft {
   from {
